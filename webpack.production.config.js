@@ -1,5 +1,4 @@
 const path = require('path');
-const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin} = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -10,6 +9,7 @@ module.exports = {
         path: path.resolve(__dirname, './dist'),
         publicPath: ''
     },
+    mode:'production',
     module:{
         rules:[
             {
@@ -50,7 +50,6 @@ module.exports = {
         ]
     },
     plugins:[
-        new TerserPlugin(),
         new MiniCssExtractPlugin({
             filename: 'style.[contenthash].css'
         }),

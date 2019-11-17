@@ -9,5 +9,8 @@
 9. npm install clean-webpack-plugin --save-dev  (清除舊的file) lecture 18
 10. npm install html-webpack-plugin --save-dev (如果使用contenthash, 這個plugin會自動加上contenthash) 19lecture
 11. npm install handlebars-loader --save-dev (搭配html-webpack-plugin)
-12. 
+
+
+TerserPlugin 在mode = production 的時候就已經default在裡面了<br>
+
 
